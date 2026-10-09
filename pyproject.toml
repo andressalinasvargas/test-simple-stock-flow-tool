@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ssf-tool"
+version = "1.0.0"
+description = "Simple Stock Flow CLI HTTP Seeder Tool"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "requests>=2.31.0",
+]
+
+[project.scripts]
+ssf-tool = "ssf_tool.__main__:main"
+
